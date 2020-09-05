@@ -20,6 +20,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::resource('tasks', 'TaskController');
 });
 
+
 Route::get('/', function () {
     return view('welcome');
 });
