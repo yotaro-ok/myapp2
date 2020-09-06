@@ -2,14 +2,14 @@
 
 @section('header')
 <div class="page-header" align="center">
-  <h3><i class="fas fa-plus"></i> Task / Create </h3>
+  <h3><i class="fas fa-plus"></i>Task / Create</h3>
 </div>
 @endsection
 
 @section('content')
 @include('error')
 <div class="row justify-content-md-center">
-  <div class="col-md-6">
+  <div class="col-md-8">
 
     <form action="{{ route('tasks.store') }}" method="POST">
       @csrf

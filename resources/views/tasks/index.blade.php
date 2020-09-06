@@ -2,7 +2,7 @@
 
 @section('header')
 <div class="row justify-content-md-center">
-<div class="col-md-6">
+<div class="col-md-8">
   <h3>
     <i class="fas fa-align-justify" align="center"></i> Task
     <a class="btn btn-success float-right" href="{{ route('tasks.create') }}"><i class="fas fa-plus"></i> Create</a>
@@ -13,7 +13,7 @@
 
 @section('content')
 <div class="row justify-content-md-center">
-  <div class="col-md-6">
+  <div class="col-md-8">
     @if($tasks->count())
     <table class="table table-sm table-striped">
       <thead>
@@ -45,7 +45,7 @@
               <i class="fas fa-edit"></i> Edit
             </a>
             <form action="{{ route('tasks.destroy', $task->id) }}" method="POST" style="display: inline;"
-              onsubmit="return confirm('Delete? Are you sure?');">
+              onsubmit="return confirm('消すんか？まじか？？');">
               {{csrf_field()}}
               <input type="hidden" name="_method" value="DELETE">
 

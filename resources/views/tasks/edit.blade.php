@@ -2,7 +2,7 @@
 
 @section('header')
 <div class="page-header" align="center">
-  <h3><i class="fas fa-edit"></i> Task / Edit #{{$task->id}}</h3>
+  <h3><i class="fas fa-edit"></i>Task / Edit #{{$task->id}}</h3>
 </div>
 @endsection
 
@@ -10,7 +10,7 @@
 @include('error')
 
 <div class="row justify-content-md-center">
-  <div class="col-md-6">
+  <div class="col-md-8">
 
     <form action="{{ route('tasks.update', $task->id) }}" method="POST">
       @method('PUT')
