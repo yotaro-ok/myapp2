@@ -1,16 +1,15 @@
-@extends('layout')
+@extends('layouts.app')
 
 @section('header')
-<div class="page-header">
-  <h1><i class="fas fa-plus"></i> Task / Create </h1>
+<div class="page-header" align="center">
+  <h3><i class="fas fa-plus"></i> Task / Create </h3>
 </div>
 @endsection
 
 @section('content')
 @include('error')
-
-<div class="row">
-  <div class="col-md-12">
+<div class="row justify-content-md-center">
+  <div class="col-md-6">
 
     <form action="{{ route('tasks.store') }}" method="POST">
       @csrf

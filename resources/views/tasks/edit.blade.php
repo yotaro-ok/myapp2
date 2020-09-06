@@ -1,16 +1,16 @@
-@extends('layout')
+@extends('layouts.app')
 
 @section('header')
-<div class="page-header">
-  <h1><i class="fas fa-edit"></i> Task / Edit #{{$task->id}}</h1>
+<div class="page-header" align="center">
+  <h3><i class="fas fa-edit"></i> Task / Edit #{{$task->id}}</h3>
 </div>
 @endsection
 
 @section('content')
 @include('error')
 
-<div class="row">
-  <div class="col-md-12">
+<div class="row justify-content-md-center">
+  <div class="col-md-6">
 
     <form action="{{ route('tasks.update', $task->id) }}" method="POST">
       @method('PUT')

@@ -1,17 +1,19 @@
-@extends('layout')
+@extends('layouts.app')
 
 @section('header')
-<div>
-  <h1>
-    <i class="fas fa-align-justify"></i> Task
+<div class="row justify-content-md-center">
+<div class="col-md-6">
+  <h3>
+    <i class="fas fa-align-justify" align="center"></i> Task
     <a class="btn btn-success float-right" href="{{ route('tasks.create') }}"><i class="fas fa-plus"></i> Create</a>
-  </h1>
+  </h3>
+</div>
 </div>
 @endsection
 
 @section('content')
-<div class="row">
-  <div class="col-md-12">
+<div class="row justify-content-md-center">
+  <div class="col-md-6">
     @if($tasks->count())
     <table class="table table-sm table-striped">
       <thead>
