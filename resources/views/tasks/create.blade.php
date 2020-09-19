@@ -30,7 +30,7 @@
                   </div>
               </div>
               <div class="well well-sm">
-                  <button type="submit" class="btn btn-primary">Create</button>
+                  <button type="submit" class="btn btn-outline-primary">Create</button>
                   <a class="btn btn-link pull-right" href="{{ route('tasks.index') }}"><i class="fas fa-backward"></i> Back</a>
               </div>
         </form>

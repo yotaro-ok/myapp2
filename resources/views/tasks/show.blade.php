@@ -10,7 +10,7 @@
 <div class="row justify-content-md-center">
   <div class="col-md-12">
       <a class="btn btn-link pull-right" href="{{ route('tasks.index') }}"><i class="fas fa-backward"></i> Back</a>
-      <a class="btn btn-sm btn-warning float-right" href="{{ route('tasks.edit', $task->id) }}">
+      <a class="btn btn-outline-warning float-right" href="{{ route('tasks.edit', $task->id) }}">
           <i class="fas fa-edit"></i> Edit
       </a>
   </div>
